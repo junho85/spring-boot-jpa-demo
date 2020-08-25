@@ -1,0 +1,10 @@
+
+spring:
+  datasource:
+    schema: classpath:db/h2/schema.sql
+    data: classpath:db/h2/data.sql
+    url: jdbc:h2:mem:testdb
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
